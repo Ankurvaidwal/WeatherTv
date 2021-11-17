@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Mulish&display=swap');
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: #1AC5FB;
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    height: 30%;
+    margin: 0em auto 0em auto;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 2px red solid; */
+}
+
+form {
+    width: 90%;
+    border: 2px solid white;
+    padding: 0.5em 1em;
+    margin-right: 1em;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+i {
+    color: #f8f8f8;
+}
+
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px white solid;
+    width: 85%;
+    height: 30px;
+    font-size: 1.2rem;
+    color: #f8f8f8;
+    /* padding: 0em 0.2em; */
+}
+
+svg {
+    width: 80%;
+    /* height: 60%; */
+}
+
+h1, h2 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    background-color: #1C7C9A;
+    text-align: center;
+    padding: 0.2em 0em;
+    margin-top: auto;
+}
+
+footer h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0em auto;
+    padding: 2em 0em;
+    /* border: 2px red solid; */
+    justify-content: space-between;
+    text-align: center;
+    /* flex: 1 0 auto; */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    max-width: 4rem;
+    width: 50%;
+    height: 20%;
+}
+
+.weather {
+    /* border: 2px red solid; */
+    text-align: center;
+}
+
+#location {
+    color: #E4E4E4;
+    font-size: 2.5rem;
+}
+
+#temp {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+@media (min-width:765px) {
+    .container {
+        flex-direction: row;
+        margin-top: 10em;
+        justify-content: space-evenly;
+    }
+    #temp {
+        font-size: 4.5rem;
+        margin: 0%;
+    }
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+    .main {
+        text-align: start;
+    }
+    .weather svg {
+        width: 15rem;
+        width: 100%;
+        height: 80%;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    form {
+        width: 20%;
+        margin-top: 0.1em;
+    }
+}
+
+@media (min-width:1100px) {
+    .container {
+        flex-direction: row;
+        margin-top: 8em;
+        justify-content: space-between;
+    }
+    #temp {
+        font-size: 8rem;
+        margin: 0%;
+    }
+    .main {
+        text-align: start;
+    }
+    .weather svg {
+        width: 20rem;
+        width: 100%;
+        height: 80%;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    form {
+        width: 15%;
+        margin-top: 0.2em;
+    }
+}

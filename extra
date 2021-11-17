@@ -1,0 +1,1 @@
+ const weatherapi = await axios.get(`api.openweathermap.org/data/2.5/weather?lat=${data.lat}&lon=${data.lon}&appid=bbd72eda55b2d29632e64e9eb4d36df2`);
